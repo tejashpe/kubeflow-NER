@@ -1,16 +1,16 @@
 name: train
 description: Trains the NER Bi-LSTM.
 inputs:
-- {name: Input x URI, type: GCSPath}
-- {name: Input y URI, type: GCSPath}
-- {name: Input job dir URI, type: GCSPath}
+- {name: Input x URI, type: String}
+- {name: Input y URI, type: String}
+- {name: Input job dir URI, type: String}
 - {name: Input tags, type: Integer}
 - {name: Input words, type: Integer}
 - {name: Input dropout }
-- {name: Output model URI template, type: GCSPath}
+- {name: Output model URI template, type: String}
 outputs:
   - name: Output model URI
-    type: GCSPath
+    type: String
 implementation:
   container:
     image: docker.io/sudhakso/kube:train

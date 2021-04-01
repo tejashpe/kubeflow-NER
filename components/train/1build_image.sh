@@ -1,7 +1,7 @@
 
 #!/bin/sh
 
-image_name=docker.io/sudhakso/kube
+image_name=docker.io/tejaswibr/kfpreprocess
 image_tag=train
 
 full_image_name=${image_name}:${image_tag}
