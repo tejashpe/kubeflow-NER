@@ -1,13 +1,13 @@
 name: preprocess
 description: Performs the IOB preprocessing.
 inputs:
-- {name: Input 1 URI, type: GCSPath}
-- {name: Output x URI template, type: GCSPath}
-- {name: Output y URI template, type: GCSPath}
-- {name: Output preprocessing state URI template, type: GCSPath}
+- {name: Input 1 URI, type: String}
+- {name: Output x URI template, type: String}
+- {name: Output y URI template, type: String}
+- {name: Output preprocessing state URI template, type: String}
 outputs:
   - name: Output x URI
-    type: GCSPath
+    type: String
   - name: Output y URI
     type: String
   - name: Output tags
